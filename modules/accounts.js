@@ -517,7 +517,9 @@ Accounts.prototype.shared = {
 	},
 
 	getAccount: function (req, cb) {
+		console.log('miao')
 		library.schema.validate(req.body, schema.getAccount, function (err) {
+			console.log('hey',err)
 			if (err) {
 				return setImmediate(cb, err[0].message);
 			}
