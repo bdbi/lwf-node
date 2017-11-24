@@ -135,7 +135,7 @@ z_schema.registerFormat('version', function (str) {
 		return true;
 	}
 
-	return /^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})([a-z]{1})?$/g.test(str);
+	return /^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})([a-z]{3})?$/g.test(str);
 });
 
 // var registeredFormats = z_schema.getRegisteredFormats();
